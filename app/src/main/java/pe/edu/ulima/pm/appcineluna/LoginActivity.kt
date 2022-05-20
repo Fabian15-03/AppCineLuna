@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
             if(nombre!=""){
                 //Camiando de view
                 val intent: Intent = Intent()
-                intent.setClass(this,MainActivity::class.java)
+                intent.setClass(this,MenuActivity::class.java)
                 //Lanzar el intent
                 startActivity(intent)
             }else {

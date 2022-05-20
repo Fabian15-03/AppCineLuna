@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCineLuna">
         <activity
-            android:name=".menuActivity"
+            android:name=".MenuActivity"
             android:exported="false" />
+        <activity
+            android:name=".menuActivity"
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -23,8 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
