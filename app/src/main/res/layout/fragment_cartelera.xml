@@ -9,15 +9,28 @@
 
     >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rviPeliculas"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <TextView
+        android:id="@+id/txtitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peliculas"
         android:textColor="#ee7922"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyPeliculas"
+        android:layout_width="409dp"
+        android:layout_height="697dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtitulo"
         tools:itemCount="3"
-        tools:listitem="@layout/item_pelicula"/>
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_pelicula" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
