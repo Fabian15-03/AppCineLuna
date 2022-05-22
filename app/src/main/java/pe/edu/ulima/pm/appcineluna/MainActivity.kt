@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentCartelera
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentSobreNosotros
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : FragmentActivity() {
     private lateinit var drawLy : DrawerLayout
     private lateinit var navVw : NavigationView
 
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         ft.add(R.id.secciones, fragmentSobreNosotros)
         ft.commit()
 
-        // Configurando toolbar
+        //Configurando toolbar
         //val toolbar = findViewById<Toolbar>(R.id.toolbar)
         //setSupportActionBar(toolbar)
     }

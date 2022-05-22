@@ -7,8 +7,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.fragment.app.FragmentActivity
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : FragmentActivity() {
     private var mitNombre:EditText?=null
     private var mbtLogin:Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
