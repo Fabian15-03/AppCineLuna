@@ -5,14 +5,14 @@
     android:id="@+id/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15171E"
+    android:background="#14161f"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ingresa tu nombre: "
-        android:textColor="@android:color/holo_purple"
+        android:textColor="#ee7922"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,20 +31,20 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:hint="Nombre"
-        android:textColorHint="@android:color/holo_purple"
+        android:textColorHint="#ee7922"
         app:boxBackgroundColor="#4E4B51"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:boxStrokeColor="@android:color/holo_purple"
+        app:boxStrokeColor="#aaaaaa"
         app:boxStrokeWidth="2dp"
-        app:hintTextColor="@android:color/holo_purple"
+        app:hintTextColor="#ee7922"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconTint="@android:color/holo_purple"
+        app:startIconTint="#ee7922"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -53,7 +53,7 @@
             android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:textColor="@android:color/holo_purple" />
+            android:textColor="#ee7922" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_marginTop="28dp"
         android:fontFamily="sans-serif-black"
         android:text="Cine Luna App"
-        android:textColor="@android:color/holo_purple"
+        android:textColor="#ee7922"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,6 +79,7 @@
         android:layout_marginStart="55dp"
         android:layout_marginTop="260dp"
         android:layout_marginEnd="55dp"
+        android:backgroundTint="#ee7922"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

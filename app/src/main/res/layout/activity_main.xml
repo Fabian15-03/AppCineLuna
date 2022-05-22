@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#14161f"
     android:id="@+id/drawLy">
 
     <LinearLayout
@@ -17,7 +18,7 @@
             android:id="@+id/tbNombre"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#AA99FF"
+            android:background="#ee7922"
             android:elevation="4dp" />
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/secciones"
