@@ -12,13 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbNombre"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:id="@+id/toolbar"
-            android:elevation="4dp"
             android:background="#AA99FF"
-            />
+            android:elevation="4dp" />
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/secciones"
             android:layout_width="match_parent"
@@ -31,6 +31,7 @@
         android:id="@+id/navVw"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        app:headerLayout="@layout/menu_header"
         app:menu="@menu/menu_navigation"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"/>

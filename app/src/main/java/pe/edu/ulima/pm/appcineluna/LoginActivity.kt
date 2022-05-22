@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 
 class LoginActivity : AppCompatActivity() {
@@ -20,8 +21,15 @@ class LoginActivity : AppCompatActivity() {
             val nombre:String=mitNombre!!.text.toString()
             if(nombre!=""){
                 //Camiando de view
+                var menuHeader=findViewById<TextView>(R.id.nombreHeader)
+                menuHeader?.setText(nombre)
                 val intent: Intent = Intent()
                 intent.setClass(this,MainActivity::class.java)
+
+                //Pasar parametros
+                val data=Bundle()
+                data.putString("nombre",nombre)
+                intent.putExtras(data)
                 //Lanzar el intent
                 startActivity(intent)
             }else {
