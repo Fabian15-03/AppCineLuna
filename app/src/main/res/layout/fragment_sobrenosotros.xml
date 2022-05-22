@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="60dp"
         android:layout_margin="@dimen/cardview_default_radius"
         android:paddingTop="20dp"
         android:text="Quienes Somos ?"
@@ -27,37 +27,42 @@
         android:id="@+id/imageView"
         android:layout_width="94dp"
         android:layout_height="76dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="ImageContrastCheck,ImageContrastCheck"
-        tools:srcCompat="@drawable/cabo"
-        android:contentDescription="TODO" />
+        android:src="@drawable/cabo" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="94dp"
         android:layout_height="73dp"
-        android:layout_marginStart="44dp"
         android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:srcCompat="@drawable/rico"
-        android:contentDescription="TODO" />
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/rico" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="200dp"
         android:layout_height="37dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="54dp"
+        android:layout_marginTop="40dp"
         android:text="Fabian Gonzales Clemente"
         android:textColor="#ee7922"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -66,15 +71,15 @@
         android:layout_width="200dp"
         android:layout_height="37dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="54dp"
+        android:layout_marginTop="40dp"
         android:text="Alvaro Laupa Ayca"
         android:textColor="#ee7922"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView4"
@@ -86,6 +91,8 @@
         android:textColor="#ee7922"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -94,14 +101,17 @@
         android:layout_width="108dp"
         android:layout_height="23dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="146dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
         android:text="20182775"
         android:textColor="#ee7922"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

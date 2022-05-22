@@ -6,6 +6,10 @@ import androidx.fragment.app.Fragment
 import pe.edu.ulima.pm.appcineluna.R
 
 class FragmentSobreNosotros: Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

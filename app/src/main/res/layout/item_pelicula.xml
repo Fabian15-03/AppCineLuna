@@ -8,8 +8,9 @@
 
     <TextView
         android:id="@+id/itPelicula"
-        android:layout_width="152dp"
+        android:layout_width="0dp"
         android:layout_height="28dp"
+        android:layout_marginStart="128dp"
         android:text="TextView"
         android:textColor="#EE7922"
         android:textSize="20sp"
@@ -23,9 +24,9 @@
 
     <TextView
         android:id="@+id/itPeliculaHora"
-        android:layout_width="84dp"
+        android:layout_width="0dp"
         android:layout_height="30dp"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="15dp"
         android:text="TextView"
         android:textColor="#EE7922"

@@ -60,8 +60,8 @@ class MainActivity : FragmentActivity() {
             val ft = supportFragmentManager.beginTransaction()
 
             when (it.itemId) {
-                id.fragment_cartelera -> mostrarFragmentCartelera(ft)
-                id.fragment_sobrenosotros -> mostrarFragmentSobreNosotros(ft)
+                id.Cartelera -> mostrarFragmentCartelera(ft)
+                id.Sobre_nosotros -> mostrarFragmentSobreNosotros(ft)
 
             }
             ft.addToBackStack(null)
@@ -82,11 +82,11 @@ class MainActivity : FragmentActivity() {
     }
 
     private fun mostrarFragmentSobreNosotros(ft: FragmentTransaction) {
-        ft.replace(id.secciones,fragmentCartelera)
+        ft.replace(id.secciones,fragmentSobreNosotros)
     }
 
     private fun mostrarFragmentCartelera(ft: FragmentTransaction) {
-        ft.replace(id.secciones,fragmentSobreNosotros)
+        ft.replace(id.secciones,fragmentCartelera)
     }
 
 
