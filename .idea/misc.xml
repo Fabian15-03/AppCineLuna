@@ -5,8 +5,7 @@
       <map>
         <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/activity_login.xml" value="0.40625" />
         <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/fragment_cartelera.xml" value="0.25" />
-        <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/fragment_sobrenosotros.xml" value="0.33" />
+        <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/fragment_cartelera.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/item_pelicula.xml" value="0.33" />
         <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/layout/menu_header.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidStudio/AppCineLuna/app/src/main/res/menu/menu_navigation.xml" value="0.20416666666666666" />
@@ -21,6 +20,10 @@
         <entry key="app/src/main/res/layout/fragment2.xml" value="0.1889564336372847" />
         <entry key="app/src/main/res/layout/fragment_cartelera.xml" value="0.11820652173913043" />
         <entry key="app/src/main/res/layout/fragment_sobrenosotros.xml" value="0.1889564336372847" />
+        <entry key="app/src/main/res/layout/fragmentpelicula1.xml" value="0.1889564336372847" />
+        <entry key="app/src/main/res/layout/fragmentpelicula2.xml" value="0.1889564336372847" />
+        <entry key="app/src/main/res/layout/fragmentpelicula3.xml" value="0.1889564336372847" />
+        <entry key="app/src/main/res/layout/item_pelicula.xml" value="0.1889564336372847" />
         <entry key="app/src/main/res/layout/menu_app.xml" value="0.1" />
         <entry key="app/src/main/res/layout/menu_header.xml" value="0.1889564336372847" />
         <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.38256410256410256" />
