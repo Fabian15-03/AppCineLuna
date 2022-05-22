@@ -13,7 +13,7 @@ class LoginActivity : AppCompatActivity() {
     private var mbtLogin:Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
         mitNombre=findViewById(R.id.itNombre)
         mbtLogin=findViewById(R.id.btLogin)
         mbtLogin!!.setOnClickListener{v:View->
@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
             if(nombre!=""){
                 //Camiando de view
                 val intent: Intent = Intent()
-                intent.setClass(this,MenuActivity::class.java)
+                intent.setClass(this,MainActivity::class.java)
                 //Lanzar el intent
                 startActivity(intent)
             }else {

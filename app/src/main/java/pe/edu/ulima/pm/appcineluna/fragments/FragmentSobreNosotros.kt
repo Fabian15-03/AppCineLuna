@@ -1,18 +1,16 @@
 package pe.edu.ulima.pm.appcineluna.fragments
 
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.fragment.app.Fragment
 import pe.edu.ulima.pm.appcineluna.R
 
-class Fragment2:Fragment() {
+class FragmentSobreNosotros: Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment2, container, false)
+        return inflater.inflate(R.layout.fragment_sobrenosotros, container, false)
     }
 }
