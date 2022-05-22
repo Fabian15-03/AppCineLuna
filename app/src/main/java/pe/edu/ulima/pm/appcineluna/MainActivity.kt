@@ -25,6 +25,8 @@ import java.security.acl.Group
 class MainActivity : FragmentActivity() {
     private lateinit var drawLy : DrawerLayout
     private lateinit var navVw : NavigationView
+    private lateinit var toolbar: Toolbar
+
     private var menuHeader:TextView?=null
 
     private val fragmentCartelera = FragmentCartelera()
@@ -37,6 +39,9 @@ class MainActivity : FragmentActivity() {
 
         drawLy = findViewById(id.drawLy)
         navVw = findViewById(id.navVw)
+        toolbar = findViewById(id.tbNombre)
+
+
         //Obtenemos los datos guardados en el intent
         val nombre=intent.getStringExtra("nombre")
         //Poner nombre en el toolbar
