@@ -48,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
         // Cargar el fragment por defecto
         val ft = supportFragmentManager.beginTransaction()
-        ft.add(R.id.secciones, fragmentCartelera)
+        ft.add(R.id.secciones, fragmentSobreNosotros)
         ft.commit()
 
         // Configurando toolbar
