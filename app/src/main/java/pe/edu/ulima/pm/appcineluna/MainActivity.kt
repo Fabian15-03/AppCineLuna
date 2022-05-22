@@ -28,7 +28,6 @@ class MainActivity : FragmentActivity() {
     private lateinit var toolbar: Toolbar
 
     private var menuHeader:TextView?=null
-
     private val fragmentCartelera = FragmentCartelera()
     private val fragmentSobreNosotros = FragmentSobreNosotros()
 
@@ -49,7 +48,10 @@ class MainActivity : FragmentActivity() {
         toolNombre.title="Hola "+nombre
         //Poner nombre en menu
         menuHeader=findViewById<TextView>(R.id.nombreHeader)
-        menuHeader?.setText(nombre)
+        if(menuHeader!=null){
+            menuHeader?.setText(nombre)
+        }
+
         //setSupportActionBar(mToolbar)
 
         navVw.setNavigationItemSelectedListener {
