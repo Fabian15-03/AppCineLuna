@@ -30,21 +30,19 @@
         android:layout_centerVertical="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:hint="Nombre"
+        android:hint="Nombre "
         android:textColorHint="#ee7922"
-        app:boxBackgroundColor="#44454b"
         app:boxCornerRadiusBottomEnd="20dp"
         app:boxCornerRadiusBottomStart="20dp"
         app:boxCornerRadiusTopEnd="20dp"
         app:boxCornerRadiusTopStart="20dp"
-        app:boxStrokeColor="#ee7922"
+        app:boxStrokeColor="#EE7922"
         app:boxStrokeWidth="2dp"
         app:hintTextColor="#ee7922"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:startIconTint="@android:color/holo_purple"
         tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -53,8 +51,11 @@
             android:layout_height="60dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
+            android:backgroundTint="#5B5656"
             android:textColor="#ee7922"
-            />
+            android:textColorHighlight="#EE7922"
+            android:textColorHint="#EE7922"
+            android:textColorLink="#EE7922" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
