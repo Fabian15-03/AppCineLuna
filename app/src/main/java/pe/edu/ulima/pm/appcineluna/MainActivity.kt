@@ -17,7 +17,6 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
-import pe.edu.ulima.pm.appcineluna.R.*
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentCartelera
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentSobreNosotros
 import java.security.acl.Group
@@ -32,18 +31,18 @@ class MainActivity : FragmentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(layout.activity_main)
+        setContentView(R.layout.activity_main)
 
-        drawLy = findViewById(id.drawLy)
-        navVw = findViewById(id.navVw)
+        drawLy = findViewById(R.id.drawLy)
+        navVw = findViewById(R.id.navVw)
         //Obtenemos los datos guardados en el intent
         val nombre=intent.getStringExtra("nombre")
         //Poner nombre en el toolbar
-        val toolNombre=findViewById<Toolbar>(id.tbNombre)
+        val toolNombre=findViewById<Toolbar>(R.id.tbNombre)
         toolNombre.title="Hola "+nombre
         //Poner nombre en menu
         menuHeader=findViewById<TextView>(R.id.nombreHeader)
-        if(menuHeader!=null){
+        if(menuHeader==null){
             menuHeader?.setText(nombre)
         }
 
@@ -55,8 +54,8 @@ class MainActivity : FragmentActivity() {
             val ft = supportFragmentManager.beginTransaction()
 
             when (it.itemId) {
-                id.fragment_cartelera -> mostrarFragmentCartelera(ft)
-                id.fragment_sobrenosotros -> mostrarFragmentSobreNosotros(ft)
+                R.id.fragment_cartelera -> mostrarFragmentCartelera(ft)
+                R.id.fragment_sobrenosotros -> mostrarFragmentSobreNosotros(ft)
 
             }
             ft.addToBackStack(null)
@@ -68,7 +67,7 @@ class MainActivity : FragmentActivity() {
         }
         // Cargar el fragment por defecto
         val ft = supportFragmentManager.beginTransaction()
-        ft.add(id.secciones, fragmentCartelera)
+        ft.add(R.id.secciones, fragmentCartelera)
         ft.commit()
 
         //Configurando toolbar
@@ -77,11 +76,11 @@ class MainActivity : FragmentActivity() {
     }
 
     private fun mostrarFragmentSobreNosotros(ft: FragmentTransaction) {
-        ft.replace(id.secciones,fragmentCartelera)
+        ft.replace(R.id.secciones,fragmentSobreNosotros)
     }
 
     private fun mostrarFragmentCartelera(ft: FragmentTransaction) {
-        ft.replace(id.secciones,fragmentSobreNosotros)
+        ft.replace(R.id.secciones,fragmentCartelera)
     }
 
 
