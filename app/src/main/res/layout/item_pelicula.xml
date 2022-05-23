@@ -18,9 +18,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/btdesc"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
+        app:layout_constraintVertical_bias="0.392" />
 
     <TextView
         android:id="@+id/itPeliculaHora"
@@ -33,11 +33,17 @@
         android:textColor="#EE7922"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/btdesc"
         app:layout_constraintTop_toBottomOf="@+id/itPelicula" />
+    <TextView
+        android:id="@+id/itPeliculaDesc"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+    </TextView>
     <ImageButton
-        android:id="@+id/imageView3"
+        android:id="@+id/btdesc"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="88dp"
         android:layout_height="71dp"

@@ -1,5 +1,8 @@
 package pe.edu.ulima.pm.appcineluna.Adapts
 
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,22 +10,39 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import pe.edu.ulima.listadosapp.Pelicula
 import pe.edu.ulima.pm.appcineluna.R
+import pe.edu.ulima.pm.appcineluna.Models.PeliculaActivity
 
 class ListadoPeliculasAdapter(private val obtenerPeliculas : List<Pelicula>,
     private val onItemClickListener : (pelicula : Pelicula ) -> Unit)
     : RecyclerView.Adapter<ListadoPeliculasAdapter.ViewHolder>() {
-    class ViewHolder(view:View) : RecyclerView.ViewHolder(view){
+    class ViewHolder(view:View) : RecyclerView.ViewHolder(view), View.OnClickListener {
         val itPelicula : TextView
         val itPeliculaHora : TextView
-        //val itPeliculaDescr : TextView
+        val itPeliculaDesc:TextView
+        val context:Context
+        var item:View
 
         init{
+            context=view.context
             itPelicula = view.findViewById(R.id.itPelicula)
             itPeliculaHora = view.findViewById(R.id.itPeliculaHora)
-            //itPeliculaDescr = view.findViewById(R.id.itPeliculaDescr)
+            itPeliculaDesc=view.findViewById(R.id.itPeliculaDesc)
+            item=view.findViewById(R.id.itemPelicula)
 
         }
+        fun setonClickListeners(){
+            item.setOnClickListener(this)
+        }
 
+        override fun onClick(v: View?) {
+            val intent:Intent=Intent()
+            intent.setClass(context, PeliculaActivity::class.java)
+            val data= Bundle()
+            data.putString("nombre",itPelicula.text.toString())
+            data.putString("desc",itPeliculaDesc.text.toString())
+            intent.putExtras(data)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
@@ -39,11 +59,8 @@ class ListadoPeliculasAdapter(private val obtenerPeliculas : List<Pelicula>,
         val pelicula = obtenerPeliculas[position]
         holder.itPelicula.text = pelicula.nombre
         holder.itPeliculaHora.text = pelicula.hora
-        //holder.itPeliculaDescr.text = pelicula.resena
-        holder.itemView.setOnClickListener{
-            onItemClickListener(pelicula)
-        }
+        holder.itPeliculaDesc.text=pelicula.resena
+        holder.setonClickListeners()
     }
-
 
 }

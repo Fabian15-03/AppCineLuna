@@ -1,26 +1,16 @@
-package pe.edu.ulima.pm.appcineluna
+package pe.edu.ulima.pm.appcineluna.Models
 
-import android.content.ClipData
-import android.content.Context
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
 import android.widget.TextView
-import android.widget.Toast
-import androidx.annotation.MenuRes
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
+import pe.edu.ulima.pm.appcineluna.R
 import pe.edu.ulima.pm.appcineluna.R.*
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentCartelera
 import pe.edu.ulima.pm.appcineluna.fragments.FragmentSobreNosotros
-import java.security.acl.Group
 
 class MainActivity : FragmentActivity() {
     private lateinit var drawLy : DrawerLayout
@@ -48,9 +38,8 @@ class MainActivity : FragmentActivity() {
         toolNombre.title="Hola "+nombre
         //Poner nombre en menu
         menuHeader=findViewById<TextView>(R.id.nombreHeader)
-        if(menuHeader!=null){
-            menuHeader?.setText(nombre)
-        }
+        menuHeader?.setText(nombre)
+
 
         //setSupportActionBar(mToolbar)
 
