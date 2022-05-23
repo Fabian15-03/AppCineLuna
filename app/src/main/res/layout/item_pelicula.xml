@@ -10,14 +10,15 @@
         android:id="@+id/itPelicula"
         android:layout_width="152dp"
         android:layout_height="28dp"
+        android:layout_marginStart="24dp"
         android:text="TextView"
         android:textColor="#EE7922"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.391" />
 
@@ -25,24 +26,30 @@
         android:id="@+id/itPeliculaHora"
         android:layout_width="84dp"
         android:layout_height="30dp"
-        android:layout_marginStart="130dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="11dp"
         android:text="TextView"
         android:textColor="#EE7922"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/itPelicula" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView3"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="88dp"
         android:layout_height="71dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/btn_star_big_on"
         android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        tools:srcCompat="@android:drawable/btn_star_big_on"
-        tools:visibility="visible" />
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ImageButton>
 </androidx.constraintlayout.widget.ConstraintLayout>
