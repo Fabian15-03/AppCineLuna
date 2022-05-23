@@ -1,5 +1,6 @@
 package pe.edu.ulima.pm.appcineluna.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.*
@@ -8,6 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import pe.edu.ulima.listadosapp.GestorPeliculas
 import pe.edu.ulima.listadosapp.Pelicula
 import pe.edu.ulima.pm.appcineluna.Adapts.ListadoPeliculasAdapter
+import pe.edu.ulima.pm.appcineluna.LoginActivity
+import pe.edu.ulima.pm.appcineluna.MainActivity
 import pe.edu.ulima.pm.appcineluna.R
 
 class FragmentCartelera:Fragment() {
@@ -38,7 +41,16 @@ class FragmentCartelera:Fragment() {
         val listaPeliculas : List<Pelicula> = GestorPeliculas().obtenerPeliculas()
         val adapter = ListadoPeliculasAdapter(listaPeliculas){
             Log.i( "PeliculasFragment","Se hizo click en la pelicula " + it.nombre)
+            val intent: Intent = Intent()
+            intent.setClass(this, MainActivity::class.java)
+            startActivity(intent)
         }
         mrcyPeliculas.adapter = adapter
     }
 }
+
+private fun Intent.setClass(fragmentCartelera: FragmentCartelera, java: Class<MainActivity>) {
+
+}
+
+

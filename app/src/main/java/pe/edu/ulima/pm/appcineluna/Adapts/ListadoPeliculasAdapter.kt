@@ -43,7 +43,7 @@ class ListadoPeliculasAdapter(private val obtenerPeliculas : List<Pelicula>,
         holder.itemView.setOnClickListener{
             onItemClickListener(pelicula)
         }
-
-
     }
+
+
 }

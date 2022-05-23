@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/itPelicula"
-        android:layout_width="152dp"
-        android:layout_height="28dp"
+        android:layout_width="231dp"
+        android:layout_height="41dp"
         android:layout_marginStart="24dp"
         android:text="TextView"
         android:textColor="#EE7922"
